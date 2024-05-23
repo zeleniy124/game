@@ -58,7 +58,14 @@ app.get('/api/scores', async (req, res) => {
         res.status(500).send('Error fetching scores');
     }
 });
-
+app.post('/api/clear', async (req, res) => {
+    try {
+        await Score.deleteMany({});
+        res.status(200).send('All scores have been cleared');
+    } catch (error) {
+        res.status(500).send('Error clearing scores');
+    }
+});
 // Serve static files from the root directory
 app.use(express.static(path.join(__dirname, '.')));
 

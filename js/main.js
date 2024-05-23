@@ -148,13 +148,13 @@ function check() { // Check for game start
         // Check for social media image clicks and redirect
         if (mouseX > facebookLinkArea.x && mouseX < facebookLinkArea.x + facebookLinkArea.w &&
             mouseY > facebookLinkArea.y && mouseY < facebookLinkArea.y + facebookLinkArea.h) {
-            window.open('https://facebook.com', '_blank');
+            window.open('https://pump.fun/board', '_blank');
         } else if (mouseX > twitterLinkArea.x && mouseX < twitterLinkArea.x + twitterLinkArea.w &&
             mouseY > twitterLinkArea.y && mouseY < twitterLinkArea.y + twitterLinkArea.h) {
-            window.open('https://twitter.com', '_blank');
+            window.open('https://x.com/pumpninjaonsol', '_blank');
         } else if (mouseX > instagramLinkArea.x && mouseX < instagramLinkArea.x + instagramLinkArea.w &&
             mouseY > instagramLinkArea.y && mouseY < instagramLinkArea.y + instagramLinkArea.h) {
-            window.open('https://instagram.com', '_blank');
+            window.open('https://t.me/pumpninjatoken', '_blank');
         }
     }
 }
@@ -287,8 +287,9 @@ function drawGameOver() {
     // Create "Go Back to Menu" button
     if (!backButton) {
         backButton = createButton('Go Back to Menu');
-        backButton.position(360, 360);
+        backButton.position(cnv.position().x + 250, cnv.position().y + 350); // Adjust the position to be within the canvas
         backButton.mousePressed(resetGame);
+        backButton.class('btn'); // Add a class for styling
     }
     console.log("lost");
 }
