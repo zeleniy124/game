@@ -19,7 +19,7 @@ let facebookImg, twitterImg, instagramImg;
 let backButton;
 
 // Base URL for the server
-const SERVER_URL = 'http://localhost:5000'; // Dynamically determine the server URL
+const SERVER_URL = 'https://pumpninja.xyz'; // Dynamically determine the server URL
 
 
 // Generate or retrieve session ID from local storage
