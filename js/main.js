@@ -242,7 +242,7 @@ function gameOver() {
 }
 
 function saveScore(sessionId, score) {
-    fetch(`${SERVER_URL}/api/score`, {
+    fetch('https://1924-2001-1c08-385-fa00-691b-cbb7-312c-1b8.ngrok-free.app/api/score', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -257,7 +257,7 @@ function saveScore(sessionId, score) {
 }
 
 function fetchScores() {
-    fetch(`${SERVER_URL}/api/scores`)
+    fetch('https://1924-2001-1c08-385-fa00-691b-cbb7-312c-1b8.ngrok-free.app/api/scores')
         .then(response => response.json())
         .then(scores => {
             let scoreboard = document.getElementById('scoreboard');
