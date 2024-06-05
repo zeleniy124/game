@@ -151,7 +151,7 @@ function check() { // Check for game start
             window.open('https://pump.fun/board', '_blank');
         } else if (mouseX > twitterLinkArea.x && mouseX < twitterLinkArea.x + twitterLinkArea.w &&
             mouseY > twitterLinkArea.y && mouseY < twitterLinkArea.y + twitterLinkArea.h) {
-            window.open('https://x.com/pepeninjasol', '_blank');
+            window.open('https://x.com/pepeninjaonsol', '_blank');
         } else if (mouseX > instagramLinkArea.x && mouseX < instagramLinkArea.x + instagramLinkArea.w &&
             mouseY > instagramLinkArea.y && mouseY < instagramLinkArea.y + instagramLinkArea.h) {
             window.open('https://t.me/pepeninjasol', '_blank');
