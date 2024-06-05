@@ -242,7 +242,7 @@ function gameOver() {
 }
 
 function saveScore(sessionId, score) {
-    fetch('https://50cb-2001-1c08-385-fa00-890d-bde9-3340-432f.ngrok-free.app/api/score', {
+    fetch('https://803c-2001-1c08-385-fa00-2726-81fd-7a67-c1a5.ngrok-free.app/api/score', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -257,7 +257,7 @@ function saveScore(sessionId, score) {
 }
 
 function fetchScores() {
-    fetch('https://50cb-2001-1c08-385-fa00-890d-bde9-3340-432f.ngrok-free.app/api/scores')
+    fetch('https://803c-2001-1c08-385-fa00-2726-81fd-7a67-c1a5.ngrok-free.app/api/scores')
         .then(response => response.json())
         .then(scores => {
             let scoreboard = document.getElementById('scoreboard');
