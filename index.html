@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pump Ninja</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+    <!-- STYLE -->
+    <style>
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: rgb(27, 29, 40);
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'go3v2', sans-serif;
+        }
 
+        #scoreboard {
+            width: 300px;
+            padding: 20px;
+            text-align: left;
+            font-size: 24px;
+        }
+        #scoreboard .score-item.you {
+            background-color: rgba(134, 239, 172, 0.5);
+        }
+        #scoreboard h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        #scoreboard .score-item {
+            margin: 5px 0;
+        }
+
+        .btn {
+            display: block;
+            width: 400px;
+            padding: 10px;
+            margin: 20px auto;
+            background-color: rgba(27, 29, 40, 0.1); /* Transparent background */
+            color: green;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 24px;
+            font-family: 'go3v2', sans-serif !important;
+
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+
+        canvas {
+            margin-left: 20px;
+        }
+
+        @font-face {
+            font-family: 'go3v2';
+            src: url('go3v2.ttf') format('truetype');
+        }
+    </style>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <div id="scoreboard">
+        <h2>Top Scores</h2>
+        <!-- Scoreboard items will be populated here by JavaScript -->
+    </div>
+
+    <!-- P5JS LIBRARY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="p5/p5.js"></script>
+    <script type="text/javascript" src="p5/addons/p5.dom.js"></script>
+    <script type="text/javascript" src="p5/addons/p5.sound.js"></script>
+
+    <!-- JS FILES -->
+    <script src="./js/main.js"></script>     
+    <script src="./js/swords.js"></script>     
+    <script src="./js/fruit.js"></script>    
+</body>
+</html>
